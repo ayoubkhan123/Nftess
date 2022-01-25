@@ -27,8 +27,9 @@ export const useStyles = makeStyles((theme) =>({
         // border: "3px solid black",
         background: "rgba(0, 0, 0, 0.25)",
         textAlign: "center",
-        // marginBottom: "30px",
+        margin: "50px 0px",
         borderRadius: "10px",
+        marginBottom: "0px",
         paddingTop: "30px",
         [theme.breakpoints.down('xs')]:{
             width: "80%",

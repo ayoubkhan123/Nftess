@@ -26,7 +26,7 @@ export const useStyles = makeStyles((theme) =>({
             width: "230px",
             fontWeight: "bold",
             borderRadius: "10px",
-            marginBottom: "20px",
+            marginBottom: "10px",
         },
     },
 

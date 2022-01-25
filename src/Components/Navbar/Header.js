@@ -6,7 +6,7 @@ import InputBase from '@material-ui/core/InputBase';
 import { useStyles } from "./NavbarStyle";
 // import { theme} from '@material-ui/core/styles';
 // import {useTheme, theme, createStyles } from '@material-ui/core/styles';
-import { Link } from "react-router-dom";
+import { Link, Navigate } from "react-router-dom";
 import "./Header.css";
 import MenuIcon from '@material-ui/icons/Menu';
 import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
@@ -55,12 +55,8 @@ const Header = () => {
 
        <Button variant="contained">Select Wallet</Button> 
         </div>
-
-            
+          
         </div>
-
-
-
         <Drawer
         className={classes.drawer}
         variant="persistent"

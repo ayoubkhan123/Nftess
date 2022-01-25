@@ -34,9 +34,9 @@ export const useStyles = makeStyles((theme) =>({
       textAlign: "center",
       margin: "0px auto",
       flexWrap: "wrap !important",
-      "& MuiInputBase-input":{
-        color: "white",
-      },
+      // "& MuiInputBase-input":{
+      //   color: "white",
+      // },
        [theme.breakpoints.down('xs')]:{
             display: "block",
             width: "auto",
