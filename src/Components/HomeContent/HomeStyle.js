@@ -17,8 +17,11 @@ export const useStyles = makeStyles((theme) =>({
         flexWrap: "wrap",
     },
     createNFT:{
-        // width: "430px",
-        // background: "green",
+        width: "430px",
+        [theme.breakpoints.down('xs')]:{
+            // margin: "0px 10px",
+            textAlign: "center",
+        },
         "& h3":{
             color: "white",
             paddingBottom: "10px",
@@ -50,12 +53,19 @@ export const useStyles = makeStyles((theme) =>({
     number:{
         display: "flex",
         gap: "85px",
+        [theme.breakpoints.down('xs')]:{
+            display: "flex",
+            justifyContent: "center",
+            textAlign: "center",
+            gap: "20px",
+        },
         "& h4":{
             // display: "flex",
             fontWeight: "bold",
             color: "white",
             padding: "25px 0px",
         },
+     
         "& span":{
             color: "rgba(255, 255, 255, 0.5)",
             fontSize: "18px",
@@ -80,6 +90,15 @@ export const useStyles = makeStyles((theme) =>({
         width: "500px",
         height: "440px",
         paddingBottom: "20px",
+        [theme.breakpoints.down('xs')]:{
+            // display: "none",
+            width: "100%",
+            textAlign: "center",
+            gridGap: "0px 0px",
+            margin: "0px auto",
+            display: "grid",
+            justifyContent: "center",
+        },
     },
     img4:{
         width: "160px ",
@@ -87,6 +106,9 @@ export const useStyles = makeStyles((theme) =>({
         position: "absolute",
         left: "61%",
         top: "12%",
+        [theme.breakpoints.down('xs')]:{
+            display: "none",
+        },
     },
 
     binance:{

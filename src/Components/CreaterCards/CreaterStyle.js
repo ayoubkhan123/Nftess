@@ -22,15 +22,24 @@ export const useStyles = makeStyles((theme) =>({
         width: "370px",
         height: "510px",
         position: "relative",
+        [theme.breakpoints.down('xs')]:{
+            width: "90% !important",
+            margin: "0px auto",
+            height: "510px",
+            "& img":{
+                width: "100% !important",
+            },
+        
+        },
         // border: "3px solid black",
         background: "rgba(0, 0, 0, 0.25)",
         textAlign: "center",
-        marginBottom: "30px",
+        marginBottom: "30px !important",
         borderRadius: "10px",
         // paddingTop: "30px",
         "& Button":{
             background: "linear-gradient(214.02deg, #B75CFF 6.04%, #671AE4 92.95%)",
-            width: "300px",
+            width: "75%",
             color: "white",
             fontWeight: "bold",
             marginTop: "25px",
@@ -45,11 +54,23 @@ export const useStyles = makeStyles((theme) =>({
         "& h4":{
                 color: "white",
                 fontWeight: "bold",
+                [theme.breakpoints.down('xs')]:{
+                    width: "80%",
+                    margin: "0px auto",
+                    textAlign: "center",
+
+
+                },
         },
         "& h6":{
         color: "rgba(255, 255, 255, 0.5)",
         fontSize: "16px",
         width: "300px",
+        [theme.breakpoints.down('xs')]:{
+            width: "97%",
+            margin: "0px auto",
+            textAlign: "center",
+        },
     },
     },
     circleimg:{
@@ -63,6 +84,7 @@ export const useStyles = makeStyles((theme) =>({
         justifyContent: "center",
         alignItems: "center",
         borderRadius: "60px",
+   
         "& img":{
             width: "128px",
             height: "120px",
@@ -77,6 +99,14 @@ export const useStyles = makeStyles((theme) =>({
         gap: "20px",
         justifyContent: "center",
         flexWrap: "wrap",
+        [theme.breakpoints.down('xs')]:{
+            // width: "70% !important",
+            display: "flex",
+            gap: "0px",
+            justifyContent: "center",
+          
+        
+        },
 
 
     },

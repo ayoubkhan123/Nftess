@@ -30,9 +30,18 @@ export const useStyles = makeStyles((theme) =>({
         // marginBottom: "30px",
         borderRadius: "10px",
         paddingTop: "30px",
+        [theme.breakpoints.down('xs')]:{
+            width: "80%",
+            height: "490px",
+            "& img":{
+                width: "85% !important",
+                height: "300px !important",
+            },
+        
+        },
         "& Button":{
             background: "linear-gradient(214.02deg, #B75CFF 6.04%, #671AE4 92.95%)",
-            width: "300px",
+            width: "75%",
             color: "white",
             fontWeight: "bold",
             marginTop: "25px",

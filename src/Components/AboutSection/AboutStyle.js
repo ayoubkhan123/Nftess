@@ -32,13 +32,19 @@ photo:{
         width: "440px",
         height: "520px",
         borderRadius: "10px",
+        [theme.breakpoints.down('xs')]:{
+        width: "90%",
+        },
     },
+    
  
 },
 nftPara:{
     textAlign: "left",
     [theme.breakpoints.down('sm')]:{
 textAlign: "center",
+// width: "80%",
+display: "none",
     },
 },
 

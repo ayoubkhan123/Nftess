@@ -20,15 +20,24 @@ export const useStyles = makeStyles((theme) =>({
     card:{
         width: "370px",
         height: "510px",
-        // border: "3px solid black",
+        [theme.breakpoints.down('xs')]:{
+            width: "270px !important",
+            height: "445px",
+            "& img":{
+                width: "75% !important",
+                height: "260px !important",
+            },
+        
+        },
         background: "rgba(0, 0, 0, 0.25)",
         textAlign: "center",
+        
         // marginBottom: "30px",
         borderRadius: "10px",
         paddingTop: "30px",
         "& Button":{
             background: "linear-gradient(214.02deg, #B75CFF 6.04%, #671AE4 92.95%)",
-            width: "300px",
+            width: "75%",
             color: "white",
             fontWeight: "bold",
             marginTop: "25px",

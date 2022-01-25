@@ -11,6 +11,9 @@ import Index from "./Components/CollectionPart/Index";
 import Cards from "./Components/MainCards/Cards";
 import FeatureCard from './Components/FeatureCards/FeatureCard';
 import Creater from './Components/CreaterCards/Creater';
+import Contact from "./Components/LastInputs/Contact";
+import Nftbox from "./Components/NftBox/Nftbox";
+import Footer1 from "./Components/Footer/Footer";
 
 
 
@@ -25,6 +28,9 @@ ReactDOM.render(
     <Cards/>
     <FeatureCard/>
       <Creater/>
+      <Contact/>
+      <Nftbox/>
+      <Footer1/>
     </BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root')

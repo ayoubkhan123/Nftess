@@ -21,10 +21,12 @@ export const useStyles = makeStyles((theme) =>({
         flexWrap: "wrap",
         justifyContent: "space-evenly",
         alignItems: "center",
+        margin: "20px 0px",
         "& Button":{
             width: "230px",
             fontWeight: "bold",
             borderRadius: "10px",
+            marginBottom: "20px",
         },
     },
 

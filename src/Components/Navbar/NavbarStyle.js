@@ -20,6 +20,11 @@ searchbr:{
     alignItems: "center",
     gap: "0px 10px",
     fontFamily: "Poppins",
+    "& h4":{
+      color: "white",
+      fontFamily: "Poppins",
+      width: "auto",
+    },
 },
 
 
@@ -114,14 +119,19 @@ search: {
     
   },
 
-
-
   drawer: {
     width: "200px",
     flexShrink: 0,
+    [theme.breakpoints.up('sm')]:{
+      display: "none",
+    },
   },
   drawerPaper: {
-    width: "200px",
+    width: "240px",
+    background: "linear-gradient(113.49deg, #984D38 -30.3%, #181E41 58.12%)",
+    [theme.breakpoints.up('sm')]:{
+      display: "none",
+    },
   },
   drawerHeader: {
     display: 'flex',
@@ -131,5 +141,35 @@ search: {
     ...theme.mixins.toolbar,
     justifyContent: 'flex-start',
   },
+  Mblinks:{
+    // paddingTop: "50px",
+
+    "& li":{
+      paddingTop: "40px",
+      color: "white",
+      textDecoration: "none",
+      listStyle: "none",
+    },
+    "& a":{
+      paddingLeft: "20px",
+
+    },
+    
+  },
+  work:{
+    fontSize:"35px",
+    color: "white",
+    right: "20px",
+    top: "20px",
+    fontSize: "35px",
+    position: "absolute",
+   [theme.breakpoints.up('xs')]:{
+     display: "none",
+   },
+   [theme.breakpoints.down('xs')]:{
+    display: "block",
+  },
+  },
+ 
   
 }))

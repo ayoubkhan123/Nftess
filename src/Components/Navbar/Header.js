@@ -5,12 +5,12 @@ import SearchIcon from '@material-ui/icons/Search';
 import InputBase from '@material-ui/core/InputBase';
 import { useStyles } from "./NavbarStyle";
 // import { theme} from '@material-ui/core/styles';
-// import {useTheme, Theme, createStyles } from '@material-ui/core/styles';
-
+// import {useTheme, theme, createStyles } from '@material-ui/core/styles';
 import { Link } from "react-router-dom";
 import "./Header.css";
-
-
+import MenuIcon from '@material-ui/icons/Menu';
+import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
+// import theme from '@material-ui/core';
 import Drawer from '@material-ui/core/Drawer';
 import IconButton from '@material-ui/core/IconButton';
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
@@ -18,10 +18,11 @@ import ChevronRightIcon from '@material-ui/icons/ChevronRight';
 
 
 const Header = () => {
+
   const [open, setOpen] = useState(false);
-  // const handleDrawerOpen = () => {
-  //   setOpen(true);
-  // };
+  const handleDrawerOpen = () => {
+    setOpen(true);
+  };
 
   const handleDrawerClose = () => {
     setOpen(false);
@@ -31,7 +32,7 @@ const Header = () => {
       <>
         <div className={classes.Navbar}>
         <div className={classes.searchbr}>
-        <div><Typography style={{color: "white",fontFamily: "Poppins"}} variant="h4">physho<span style={{color: "blue"}}>Art</span></Typography></div>
+        <div><Typography style={{fontFamily: "Poppins"}} variant="h4">physho<span style={{color: "blue"}}>Art</span></Typography></div>
         <div className={classes.search}>
             <div className={classes.searchIcon}>
               <SearchIcon />
@@ -63,19 +64,34 @@ const Header = () => {
         <Drawer
         className={classes.drawer}
         variant="persistent"
-        anchor="top"
+        anchor="right"
+        
         open={open}
         classes={{
           paper: classes.drawerPaper,
         }}
       >
+     
         <div className={classes.drawerHeader}>
-        <h1>helooooooooooo</h1>
-          <IconButton onClick={handleDrawerClose}>
-          {/* {theme.direction === 'rtl' ? <ChevronLeftIcon /> : <ChevronRightIcon />} */}
-          </IconButton>
+        
+        <ArrowForwardIosIcon style={{cursor: "pointer",marginLeft: "10px",color: "white",marginTop: "40px",fontSize: "30px"}} onClick={handleDrawerClose}/>
+     
         </div>
+          <nav className={classes.Mblinks} style={{marginTop: "20px"}}>
+          <li><a>Collections</a></li>
+          <li><a>Features</a></li>
+          <li><a>FAQ</a></li>
+
+
+
+          </nav>
+
+          {/* <MenuIcon style={{fontSize: "35px",position: "absolute",top: "40px",right: "20px",color: "white",}} onClick={handleDrawerOpen}/> */}
+
         </Drawer>
+        <div className={classes.menu}>
+        <MenuIcon className={classes.work} onClick={handleDrawerOpen}/>
+        </div>
         </>
     )
 }
