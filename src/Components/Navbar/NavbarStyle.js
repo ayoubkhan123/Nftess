@@ -24,6 +24,7 @@ searchbr:{
       color: "white",
       fontFamily: "Poppins",
       width: "auto",
+      fontWeight: "bold",
     },
 },
 
