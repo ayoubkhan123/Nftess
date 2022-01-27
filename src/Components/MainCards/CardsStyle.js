@@ -29,7 +29,7 @@ export const useStyles = makeStyles((theme) =>({
         textAlign: "center",
         margin: "50px 0px",
         borderRadius: "10px",
-        marginBottom: "0px",
+        marginBottom: "-50px",
         paddingTop: "30px",
         [theme.breakpoints.down('xs')]:{
             width: "80%",
