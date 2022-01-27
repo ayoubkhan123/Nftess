@@ -1,10 +1,10 @@
 import React from 'react';
-import HomeSection from "./Components/HomeContent/HomeSection";
+// import HomeSection from "./Components/HomeContent/HomeSection";
 
 const Collect = () => {
     return (
         <div>
-            <HomeSection/>
+            {/* <HomeSection/> */}
         </div>
     )
 }

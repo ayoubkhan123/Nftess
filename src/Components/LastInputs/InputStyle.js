@@ -16,17 +16,17 @@ export const useStyles = makeStyles((theme) =>({
         },
 
     },
-    // form:{
-    //   display: "flex",
-    //   width: "100%",
-    //   background: "green",
-    //   textAlign: "center",
-    //   margin: "0px auto",
-    //   // flexWrap: "wrap",
-    //   [theme.breakpoints.down('xs')]:{
-    //     display: "block",
-    //   },
-    // },
+    forms:{
+      display: "flex",
+      width: "100%",
+      flexWrap: "wrap !important",
+
+      // background: "green",
+      textAlign: "center",
+      // margin: "0px auto",
+      // flexWrap: "wrap",
+     
+    },
  
     root: {
          display: "flex",
