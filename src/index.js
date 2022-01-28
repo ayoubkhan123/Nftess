@@ -14,6 +14,7 @@ import Creater from './Components/CreaterCards/Creater';
 import Contact from "./Components/LastInputs/Contact";
 import Nftbox from "./Components/NftBox/Nftbox";
 import Footer1 from "./Components/Footer/Footer";
+// import Routess from './Routerss/Routess';
 
 
 

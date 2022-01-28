@@ -49,7 +49,7 @@ const Header = () => {
         </div>
 
         <div className={classes.links}>
-            <Link className={classes.link1} to="/">Collections</Link>
+            <Link className={classes.link1} activeStyle={{color: "blue"}} to="/">Collections</Link>
             <Link className={classes.link1} to="/feature">Feature</Link>
             <Link className={classes.link1} to="/faq">FAQ</Link>
 

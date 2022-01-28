@@ -17,11 +17,11 @@ export const useStyles = makeStyles((theme) =>({
     },
     Buttons:{
         display: "flex",
-        height: "20vh",
+        height: "15vh",
         flexWrap: "wrap",
         justifyContent: "space-evenly",
         alignItems: "center",
-        margin: "20px 0px",
+        margin: "0px 0px",
         "& Button":{
             width: "230px",
             fontWeight: "bold",
