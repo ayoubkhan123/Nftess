@@ -1,23 +1,30 @@
-import React, {useState} from 'react';
+import React, {useState,useEffect} from 'react';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import SearchIcon from '@material-ui/icons/Search';
 import InputBase from '@material-ui/core/InputBase';
 import { useStyles } from "./NavbarStyle";
-// import { theme} from '@material-ui/core/styles';
-// import {useTheme, theme, createStyles } from '@material-ui/core/styles';
-import { Link, Navigate } from "react-router-dom";
+import {BrowserRouter, Link } from "react-router-dom";
 import "./Header.css";
 import MenuIcon from '@material-ui/icons/Menu';
 import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
-// import theme from '@material-ui/core';
 import Drawer from '@material-ui/core/Drawer';
-import IconButton from '@material-ui/core/IconButton';
-import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
-import ChevronRightIcon from '@material-ui/icons/ChevronRight';
+
 
 
 const Header = () => {
+  const [navbar, setNavbar] = useState(false);
+
+  const changeBackground = () =>{
+    if(window.scrollY >= 80){
+        setNavbar(true)
+    }
+    else{
+      setNavbar(false)
+    }
+  }
+
+window.addEventListener('scroll', changeBackground);
 
   const [open, setOpen] = useState(false);
   const handleDrawerOpen = () => {
@@ -49,10 +56,11 @@ const Header = () => {
         </div>
 
         <div className={classes.links}>
-            <Link className={classes.link1} activeStyle={{color: "blue"}} to="/">Collections</Link>
-            <Link className={classes.link1} to="/feature">Feature</Link>
+              <BrowserRouter>
+            <Link className={classes.link1} to="/">Collections</Link> 
             <Link className={classes.link1} to="/faq">FAQ</Link>
-
+           <Link className={classes.link1} to="/feature">Feature</Link>
+           </BrowserRouter>
        <Button variant="contained">Select Wallet</Button> 
         </div>
           
@@ -77,8 +85,6 @@ const Header = () => {
           <li><a>Collections</a></li>
           <li><a>Features</a></li>
           <li><a>FAQ</a></li>
-
-
 
           </nav>
 

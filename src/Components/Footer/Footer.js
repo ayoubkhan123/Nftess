@@ -5,6 +5,7 @@ import {useStyles} from './footerStyle';
 const Footer1 = () => {
     const classes = useStyles();
     return (
+        <>
         <div className={classes.mainfooter}>
             <div className={classes.footer1}>
             <Typography variant="h5">physho<span style={{color: "blue"}}>Art</span></Typography>
@@ -37,8 +38,10 @@ const Footer1 = () => {
                 <Typography variant="h6">khan@gmail.com</Typography>
             </div>
 
-
         </div>
+        <div style={{textAlign: "center"}}><Typography variant="h6" style={{color: "gray", fontSize: "18px"}}>Created by<span style={{color: "white"}}> AYYub </span> | All Right Reserved!</Typography></div>
+
+        </>
     )
 }
 

@@ -4,7 +4,6 @@ import ReactDOM from 'react-dom';
 // import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Header from "./Components/Navbar/Header";
-import {BrowserRouter} from "react-router-dom";
 import HomeSection from "./Components/HomeContent/HomeSection";
 import AboutSection from "./Components/AboutSection/About";
 import Index from "./Components/CollectionPart/Index";
@@ -14,15 +13,15 @@ import Creater from './Components/CreaterCards/Creater';
 import Contact from "./Components/LastInputs/Contact";
 import Nftbox from "./Components/NftBox/Nftbox";
 import Footer1 from "./Components/Footer/Footer";
-// import Routess from './Routerss/Routess';
+
 
 
 
 
 ReactDOM.render(
   <React.StrictMode>
-  <BrowserRouter>
-    <Header/>
+  {/* <App/>  */}
+     <Header/>
     <HomeSection/>
     <AboutSection />
     <Index/>
@@ -32,7 +31,6 @@ ReactDOM.render(
       <Contact/>
       <Nftbox/>
       <Footer1/>
-    </BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root')
 );

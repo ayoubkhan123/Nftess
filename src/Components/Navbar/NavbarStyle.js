@@ -12,7 +12,8 @@ export const useStyles = makeStyles((theme) =>({
         alignItems: "center",
         padding: "0px 30px",
         fontFamily: "Poppins",
-
+        // position: "fixed",
+        zIndex: "200",
     },
 searchbr:{
     display: "flex",
@@ -162,7 +163,6 @@ search: {
     color: "white",
     right: "20px",
     top: "20px",
-    fontSize: "35px",
     position: "absolute",
    [theme.breakpoints.up('xs')]:{
      display: "none",

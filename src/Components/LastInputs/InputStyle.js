@@ -32,6 +32,10 @@ export const useStyles = makeStyles((theme) =>({
          display: "flex",
       width: "100%",
       textAlign: "center",
+      "& MuiInputBase-input":{
+          color: "white !important",
+          padding: "100px",
+      },
       margin: "0px auto",
       flexWrap: "wrap !important",
       // "& MuiInputBase-input":{
