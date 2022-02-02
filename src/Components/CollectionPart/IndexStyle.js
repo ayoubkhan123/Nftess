@@ -21,7 +21,10 @@ export const useStyles = makeStyles((theme) =>({
         flexWrap: "wrap",
         justifyContent: "space-evenly",
         alignItems: "center",
-        margin: "0px 0px",
+        [theme.breakpoints.down('xs')]:{
+        margin: "35px 0px",
+
+        },
         "& Button":{
             width: "230px",
             fontWeight: "bold",

@@ -67,7 +67,7 @@ window.addEventListener('scroll', changeBackground);
         </div>
         <Drawer
         className={classes.drawer}
-        variant="persistent"
+        variant="temporary"
         anchor="right"
         
         open={open}
@@ -87,8 +87,6 @@ window.addEventListener('scroll', changeBackground);
           <li><a>FAQ</a></li>
 
           </nav>
-
-          {/* <MenuIcon style={{fontSize: "35px",position: "absolute",top: "40px",right: "20px",color: "white",}} onClick={handleDrawerOpen}/> */}
 
         </Drawer>
         <div className={classes.menu}>

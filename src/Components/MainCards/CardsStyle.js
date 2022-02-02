@@ -6,18 +6,13 @@ export const useStyles = makeStyles((theme) =>({
     Cards_Main:{
         width: "100%",
         height : "auto",
-        // margin: "0px auto",
         textAlign: "center",
         gap: "30px",
-        // gridGap: "20px 20px",
         display: "flex",
         flexWrap: "wrap",
-        // gridTemplateColumns: "320px 320px 360px",
         justifyContent: "center",
-        // gap: "20px",
         alignItems: "center",
         paddingBottom: "100px",
-        margin: "0px",
         boxSizing: "border-box",
     },
 

@@ -95,7 +95,7 @@ export const useStyles = makeStyles((theme) =>({
             width: "100%",
             textAlign: "center",
             gridGap: "0px 0px",
-            margin: "0px auto",
+            marginLeft: "15px",
             display: "grid",
             justifyContent: "center",
         },
