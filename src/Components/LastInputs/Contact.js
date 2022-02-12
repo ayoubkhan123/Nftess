@@ -18,19 +18,19 @@ Question</Typography>
 
 <div className={classes.forms}>
 
-        <form style={{display: "flex",flexWrap:"wrap",alignItems: "center", textAlign: "center", justifyContent: "center", color: "white"}} className={classes.root} noValidate autoComplete="off">
+        <form style={{display: "flex",alignItems: "center", textAlign: "center", justifyContent: "center", color: "white"}} className={classes.root} noValidate autoComplete="off">
+      <TextField style={{marginRight: "20px",}} id="standard-secondary" label="Lorem ipsum ipsum ?" color="primary"/>
+      <TextField id="standard-secondary" label="Lorem ipsum ipsum ?" color="orange"/>
+   
+    </form>
+
+    <form style={{display: "flex",alignItems: "center", textAlign: "center", justifyContent: "center", color: "white"}} className={classes.root} noValidate autoComplete="off">
       <TextField style={{marginRight: "20px"}} id="standard-secondary" label="Lorem ipsum ipsum ?" color="primary"/>
       <TextField id="standard-secondary" label="Lorem ipsum ipsum ?" color="orange"/>
    
     </form>
 
-    <form style={{display: "flex",flexWrap:"wrap",alignItems: "center", textAlign: "center", justifyContent: "center", color: "white"}} className={classes.root} noValidate autoComplete="off">
-      <TextField style={{marginRight: "20px"}} id="standard-secondary" label="Lorem ipsum ipsum ?" color="primary"/>
-      <TextField id="standard-secondary" label="Lorem ipsum ipsum ?" color="orange"/>
-   
-    </form>
-
-    <form style={{display: "flex",flexWrap:"wrap",alignItems: "center", textAlign: "center", justifyContent: "center", color: "white"}} className={classes.root} noValidate autoComplete="off">
+    <form style={{display: "flex",alignItems: "center", textAlign: "center", justifyContent: "center", color: "white"}} className={classes.root} noValidate autoComplete="off">
       <TextField style={{marginRight: "20px"}} id="standard-secondary" label="Lorem ipsum ipsum ?" color="primary"/>
       <TextField id="standard-secondary" label="Lorem ipsum ipsum ?" color="orange"/>
    

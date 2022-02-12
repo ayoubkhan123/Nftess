@@ -1,6 +1,4 @@
 import { makeStyles } from '@material-ui/core/styles';
-// import { useStyles } from './../Navbar/NavbarStyle';
-
 export const useStyles = makeStyles((theme) =>({
     mainCollect:{
         width: "100%",
@@ -20,12 +18,7 @@ export const useStyles = makeStyles((theme) =>({
       display: "flex",
       width: "100%",
       flexWrap: "wrap !important",
-
-      // background: "green",
       textAlign: "center",
-      // margin: "0px auto",
-      // flexWrap: "wrap",
-     
     },
  
     root: {
@@ -35,16 +28,18 @@ export const useStyles = makeStyles((theme) =>({
       "& MuiInputBase-input":{
           color: "white !important",
           padding: "100px",
-      },
+      }, 
       margin: "0px auto",
       flexWrap: "wrap !important",
-      // "& MuiInputBase-input":{
-      //   color: "white",
-      // },
        [theme.breakpoints.down('xs')]:{
-            display: "block",
-            width: "auto",
-            height: "auto",
+            display: "flex",
+            textAlign: "left",
+            flexDirection: "column",
+            padding: "10px",
+            margin: "0px",
+            // lineHight: "40px",
+            width: "100%",
+            // height: "auto",
           },
         '& > *': {
           margin: theme.spacing(3),

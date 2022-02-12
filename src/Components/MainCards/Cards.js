@@ -10,7 +10,7 @@ const Cards = () => {
     return (
         <div className={classes.Cards_Main}>
          {
-             Carddata.map((elem) =>{
+             Carddata.map((elem) =>{ 
                  return(
                     <div className={classes.card}>
             <div>
