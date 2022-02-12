@@ -39,7 +39,7 @@ const Footer1 = () => {
             </div>
 
         </div>
-        <div style={{textAlign: "center"}}><Typography variant="h6" style={{color: "gray", fontSize: "18px"}}>Created by<span style={{color: "white"}}> AYYub </span> | All Right Reserved!</Typography></div>
+        <div style={{textAlign: "center",paddingBottom: "20px"}}><Typography variant="h6" style={{color: "gray", fontSize: "18px"}}>Created by<span style={{color: "white"}}> AYYub </span> | All Right Reserved!</Typography></div>
 
         </>
     )

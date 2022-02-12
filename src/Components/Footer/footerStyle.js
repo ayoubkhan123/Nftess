@@ -5,13 +5,14 @@ export const useStyles = makeStyles((theme) =>({
         width: "100%",
         display: "flex",
         justifyContent: "space-between",
-        // gridTemplateColumns: "245px 245px 245px 245px",
+        paddingBottom: "20px",
         flexWrap: "wrap",
+        [theme.breakpoints.down('xs')]:{
+                display: "block",
+        },
         padding: "0px 20px",
-        // gap: "10px",
     },
     footer1:{
-        // width: "250px",
         paddingBottom: "25px",
 
 "& h5":{
@@ -27,7 +28,6 @@ color: "rgba(255, 255, 255, 0.5)",
     },
 
     footer2:{
-        // width: "250px",
         paddingBottom: "25px",
         "& h5":{
             color: "white",
@@ -43,7 +43,6 @@ color: "rgba(255, 255, 255, 0.5)",
            
 
       footer3:{
-        // width: "250px",
         paddingBottom: "25px",
        "& h5":{
         fontWeight: "bold",
@@ -60,7 +59,6 @@ color: "rgba(255, 255, 255, 0.5)",
         },
                    
      footer4:{
-        // width: "250px",
         paddingBottom: "25px",
 
           "& h5":{
