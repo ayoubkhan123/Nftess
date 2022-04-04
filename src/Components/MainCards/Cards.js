@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useState} from 'react';
 import { useStyles } from "./CardsStyle";
 import Button from '@material-ui/core/Button';
 import Carddata from "./Carddata";
@@ -7,10 +7,16 @@ import Carddata from "./Carddata";
 
 const Cards = () => {
     const classes = useStyles();
+    const [set, setData] = useState(3);
+    const loadMore = () => {
+        setData(set + set);
+    }
+    const slice = Carddata.slice(0, set)
     return (
+        <>
         <div className={classes.Cards_Main}>
          {
-             Carddata.map((elem) =>{ 
+             slice.map((elem) =>{ 
                  return(
                     <div className={classes.card}>
             <div>
@@ -31,6 +37,10 @@ const Cards = () => {
              })
                }
         </div>
+        <div style={{display: "flex",justifyContent: "center"}}>
+        <Button onClick={loadMore} variant="contained" color="success" style={{fontWeight: "bold"}}>loadmore</Button>
+</div>
+        </>
     )
 }
 
