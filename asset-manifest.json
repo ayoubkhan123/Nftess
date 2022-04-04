@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Nftess/static/css/main.7082459e.css",
-    "main.js": "/Nftess/static/js/main.a0721d82.js",
+    "main.js": "/Nftess/static/js/main.455a1fe8.js",
     "static/js/787.7ed2f5f7.chunk.js": "/Nftess/static/js/787.7ed2f5f7.chunk.js",
     "static/media/julian-hochgesang-39BKKhuy11k-unsplash 1.png": "/Nftess/static/media/julian-hochgesang-39BKKhuy11k-unsplash 1.8bcd8f42bc0f1983edd9.png",
     "static/media/Rectangle 23.png": "/Nftess/static/media/Rectangle 23.110cfed9031085978330.png",
@@ -31,11 +31,11 @@
     "static/media/Binance-Logo.wine (1).svg": "/Nftess/static/media/Binance-Logo.wine (1).b5d3a1eb38c9c93f98d3f8bef47e41ab.svg",
     "index.html": "/Nftess/index.html",
     "main.7082459e.css.map": "/Nftess/static/css/main.7082459e.css.map",
-    "main.a0721d82.js.map": "/Nftess/static/js/main.a0721d82.js.map",
+    "main.455a1fe8.js.map": "/Nftess/static/js/main.455a1fe8.js.map",
     "787.7ed2f5f7.chunk.js.map": "/Nftess/static/js/787.7ed2f5f7.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7082459e.css",
-    "static/js/main.a0721d82.js"
+    "static/js/main.455a1fe8.js"
   ]
 }
